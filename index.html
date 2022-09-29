@@ -13,8 +13,9 @@
     <div class="directions">
       <h1>10% Recurring Calculator</h1>
       <p>
-        takes ten percent from the START VALUE, and adds that ten percent to the start value.<br/><br/>
-        Adjusting the REPEAT AMOUNT will run the calculation again (x amount of times) with the previous answer being the new starting value each time.
+        takes ten percent from the START VALUE, and adds that ten percent to the start value.<br /><br />
+        Adjusting the REPEAT AMOUNT will run the calculation again (x amount of times) with the previous answer being
+        the new starting value each time.
       </p>
     </div>
 
@@ -26,27 +27,37 @@
         <tr>
           <td>Starting Value</td>
           <td>
-            <input type="number" id="starting-number" placeholder="">start
+            <input type="number" id="starting-number" placeholder="">
           </td>
         </tr>
         <tr>
           <td>Repeat Amount</td>
           <td>
-            <input type="number" id="repeat-amount" placeholder="">cycles
+            <input type="number" id="repeat-amount" placeholder="">
           </td>
         </tr>
 
         <tr>
           <td>Final Answer:</td>
           <td>
-            <p id="answer"></p>
+            <p id="answer">0</p>
           </td>
         </tr>
-      </table>
-      <input type="button" id="calculate-btn" value="calculate">
-      <input type="button" id="clear-btn" value="clear">
-    </form>
 
+        
+
+      </table>
+
+
+    </form>
+<tr>
+          <td>
+            <input type="button" id="clear-btn" value="Clear">
+          </td>
+          <td>
+            <input type="button" id="calculate-btn" value="Calculate">
+          </td>
+        </tr>
   </div>
 
   <script src="./tenPercentRecurring.js"></script>

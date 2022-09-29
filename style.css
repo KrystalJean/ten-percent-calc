@@ -8,23 +8,76 @@ body {
     color:tan;
     max-width: 400px;
     width:auto;
-    height: 400px;
+    height: auto;
     border-radius: 3%;
     border: solid black 2px;
     padding: 16px;
+    padding-bottom: 40px;
     text-align: center;
 
 }
 
 #frm1 {
-    border: solid tan 1px;
-    padding: 10px;
-    margin-top: 16px;
+    padding-top: 20px;
     text-align: left;
+    border-color: tan;
 }
 
 input {
-    width: auto;
+    width: 85px;
     text-align: right;
-    font-weight: bold;    
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+
+table {
+    border-color: tan;
+    border-collapse: collapse;
+    box-shadow: rgba(51, 51, 51, 0.418) 6px 6px 10px,
+     rgba(51, 51, 51, 0.418) -6px -6px 10px;
+}
+
+th {
+    background-color: #b10000;
+    text-align: center;
+    
+}
+
+td {
+    padding-top: 6px;
+    padding-left: 6px;
+    border: none;
+}
+
+#answer {
+    width: 90px;
+    text-align: right;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border-top:#333 2px solid;
+    border-left:#333 2px solid;
+    border-right:rgb(97, 97, 97) 2px solid;
+    border-bottom:rgb(97, 97, 97) 2px solid ;
+}
+
+#calculate-btn {
+    background-color: #00b17c;
+    text-align: center;
+    width: 93px;
+    margin-top: 24px;
+    box-shadow: rgba(51, 51, 51, 0.418) 6px 6px 10px,
+    rgba(51, 51, 51, 0.418) -6px -1px 10px;
+}
+
+#clear-btn {
+    background-color: #c5c5c5;
+    text-align: center;
+    width: auto;
+    margin-top: 24px;
+    margin-right: 65px;
+    box-shadow: rgba(51, 51, 51, 0.418) 6px 6px 10px,
+    rgba(51, 51, 51, 0.418) -6px -1px 10px;
+
 }
