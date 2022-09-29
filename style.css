@@ -1,0 +1,38 @@
+body {
+    background-color: #333;
+    
+}
+
+#calculatorPanel {
+    background-color: brown;
+    color:tan;
+    max-width: 400px;
+    width:auto;
+    height: 400px;
+    border-radius: 3%;
+    border: solid black 2px;
+    padding: 30px;
+    text-align: center;
+
+}
+
+#frm1 {
+    border: solid tan 1px;
+    padding: 10px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+input {
+    width: 70px;
+    text-align: right;
+    font-weight: bold;
+    
+}
+
+#answer-wrapper {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    font-weight: bold;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="calculatorPanel">
+    <div class="directions">
+      <h1>10% Recurring Calculator</h1>
+      <p>
+        takes ten percent from the START VALUE, and adds that ten percent to the start value.<br/><br/>
+        Adjusting the REPEAT AMOUNT will run the calculation again (x amount of times) with the previous answer being the new starting value each time.
+      </p>
+    </div>
+
+    <form id="frm1" action="Calculate.html">
+      <table width="350px" border="1px">
+        <tr>
+          <th colspan="2">~ Add 10% Calculator ~</th>
+        </tr>
+        <tr>
+          <td>Starting Value</td>
+          <td>
+            <input type="number" id="starting-number" placeholder="">start
+          </td>
+        </tr>
+        <tr>
+          <td>Repeat Amount</td>
+          <td>
+            <input type="number" id="repeat-amount" placeholder="">cycles
+          </td>
+        </tr>
+
+        <tr>
+          <td>Final Answer:</td>
+          <td>
+            <p id="answer"></p>
+          </td>
+        </tr>
+      </table>
+      <input type="button" id="calculate-btn" value="calculate">
+      <input type="button" id="clear-btn" value="clear">
+    </form>
+
+  </div>
+
+  <script src="./tenPercentRecurring.js"></script>
+
+</body>
+
+</html>
