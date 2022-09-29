@@ -17,7 +17,7 @@ function Calculate() {
   }
 
   let k = tempHoldArray.length - 1;
-  answerBlock.innerHTML = tempHoldArray[k];
+  answerBlock.innerHTML = Math.round((tempHoldArray[k] + Number.EPSILON) * 100) / 100;
 
   console.log(tempHoldArray);
 }
