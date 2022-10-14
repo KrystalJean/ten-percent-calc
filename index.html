@@ -9,7 +9,9 @@
 </head>
 
 <body>
-  <div id="calculatorPanel">
+
+  <div id="calculator-panel">
+
     <div class="directions">
       <h1>10% Recurring Calculator</h1>
       <p>
@@ -21,15 +23,18 @@
 
     <form id="frm1" action="Calculate.html">
       <table width="350px" border="1px">
+
         <tr>
           <th colspan="2">~ Add 10% Calculator ~</th>
         </tr>
+
         <tr>
           <td>Starting Value</td>
           <td>
             <input type="number" id="starting-number" placeholder="">
           </td>
         </tr>
+
         <tr>
           <td>Repeat Amount</td>
           <td>
@@ -44,21 +49,21 @@
           </td>
         </tr>
 
-        
-
       </table>
-
-
     </form>
-<tr>
-          <td>
-            <input type="button" id="clear-btn" value="Clear">
-          </td>
-          <td>
-            <input type="button" id="calculate-btn" value="Calculate">
-          </td>
-        </tr>
+
+    <tr>
+      <td>
+        <input type="button" id="clear-btn" value="Clear">
+      </td>
+      <td>
+        <input type="button" id="calculate-btn" value="Calculate">
+      </td>
+    </tr>
+
   </div>
+
+  <input type=checkbox id="test-checkbox" onclick= "themeChanger()" > Test Theme
 
   <script src="./tenPercentRecurring.js"></script>
 

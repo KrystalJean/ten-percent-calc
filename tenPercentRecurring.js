@@ -28,3 +28,15 @@ function Clear() {
 
 calculateBtn.addEventListener("click", Calculate);
 clearBtn.addEventListener("click", Clear);
+
+function themeChanger() {
+  const testTheme = document.getElementById('test-checkbox');
+  const calculatorPanel = document.getElementById('calculator-panel');
+  if (testTheme.checked) {
+    calculatorPanel.classList.add('test');
+    calculatorPanel.classList.add('test');
+  } else {
+    calculatorPanel.classList.remove('test');
+    calculatorPanel.classList.remove('test');
+  }
+}

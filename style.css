@@ -1,11 +1,30 @@
-body {
-    background-color: #333;
-    
+:root {
+    --body-bg-color: #333;
+    --control-panel-bg-color: #a52a2a;
+    --control-panel-font-color: #d2b48c;
+    --input-bg-color: #fff;
+    --table-header-bg-color: #b10000;
+    --calculate-button-bg-color: #00b17c;
+    --clear-button-bg-color: #c5c5c5;
 }
 
-#calculatorPanel {
-    background-color: brown;
-    color:tan;
+.test {
+    --body-bg-color: #333;
+    --control-panel-bg-color: #2a5ba5;
+    --control-panel-font-color: #d2b48c;
+    --input-bg-color: #fff;
+    --table-header-bg-color: #0029b1;
+    --calculate-button-bg-color: #00b17c;
+    --clear-button-bg-color: #c5c5c5;
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
+
+#calculator-panel {
+    background-color: var(--control-panel-bg-color);
+    color:var(--control-panel-font-color);
     max-width: 400px;
     width:auto;
     height: auto;
@@ -20,7 +39,7 @@ body {
 #frm1 {
     padding-top: 20px;
     text-align: left;
-    border-color: tan;
+    border-color: var(--control-panel-font-color);
 }
 
 input {
@@ -28,18 +47,18 @@ input {
     text-align: right;
     font-weight: bold;
     color: black;
-    background-color: white;
+    background-color: var(--input-bg-color);
 }
 
 table {
-    border-color: tan;
+    border-color: var(--control-panel-font-color);
     border-collapse: collapse;
     box-shadow: rgba(51, 51, 51, 0.418) 6px 6px 10px,
      rgba(51, 51, 51, 0.418) -6px -6px 10px;
 }
 
 th {
-    background-color: #b10000;
+    background-color: var(--table-header-bg-color);
     text-align: center;
     
 }
@@ -63,7 +82,7 @@ td {
 }
 
 #calculate-btn {
-    background-color: #00b17c;
+    background-color: var(--calculate-button-bg-color);
     text-align: center;
     width: 93px;
     margin-top: 24px;
@@ -72,7 +91,7 @@ td {
 }
 
 #clear-btn {
-    background-color: #c5c5c5;
+    background-color: var(--clear-button-bg-color);
     text-align: center;
     width: auto;
     margin-top: 24px;
