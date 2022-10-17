@@ -1,5 +1,8 @@
 const calculateBtn = document.getElementById('calculate-btn');
 const clearBtn = document.getElementById('clear-btn');
+const multiplierAsPercent = document.getElementsByClassName('multiplier-as-multiplier');
+let multiplierAsDecimal = .10;
+
 
 function Calculate() {
   let startValue = document.getElementById("starting-number").valueAsNumber;
@@ -10,7 +13,7 @@ function Calculate() {
 
 
   for (let i = 0; i < repeatAmount; i++) {
-    let takeTen = startValue * .10;
+    let takeTen = startValue * multiplierAsDecimal;
     startValue = startValue + takeTen;
     tempHoldArray.push(startValue);
 
@@ -30,13 +33,35 @@ calculateBtn.addEventListener("click", Calculate);
 clearBtn.addEventListener("click", Clear);
 
 function themeChanger() {
-  const testTheme = document.getElementById('test-checkbox');
   const calculatorPanel = document.getElementById('calculator-panel');
-  if (testTheme.checked) {
-    calculatorPanel.classList.add('test');
-    calculatorPanel.classList.add('test');
-  } else {
-    calculatorPanel.classList.remove('test');
-    calculatorPanel.classList.remove('test');
+  const twentyTheme = document.getElementById('twenty-theme-radio');
+  const fiftyTheme = document.getElementById('fifty-theme-radio');
+  
+  if (twentyTheme.checked === true) {
+    calculatorPanel.removeAttribute('class');
+    calculatorPanel.classList.add('twenty-theme');
+    multiplierAsDecimal = .20;
+    for (i = 0; i < multiplierAsPercent.length; i++) {
+      multiplierAsPercent[i].innerHTML = "20";
+    }
+
+  } else if (fiftyTheme.checked === true) {
+    calculatorPanel.removeAttribute('class');
+    calculatorPanel.classList.add('fifty-theme');
+    multiplierAsDecimal = .50;
+    for (i = 0; i < multiplierAsPercent.length; i++) {
+      multiplierAsPercent[i].innerHTML = "50";
+    }
+
+  }
+    else {
+    calculatorPanel.removeAttribute('class');
+    calculatorPanel.classList.add('ten-theme');
+    multiplierAsDecimal = .10;
+    for (i = 0; i < multiplierAsPercent.length; i++) {
+      multiplierAsPercent[i].innerHTML = "10";
+    }
   }
 }
+
+themeChanger()

@@ -8,12 +8,22 @@
     --clear-button-bg-color: #c5c5c5;
 }
 
-.test {
+.twenty-theme {
     --body-bg-color: #333;
     --control-panel-bg-color: #2a5ba5;
     --control-panel-font-color: #d2b48c;
     --input-bg-color: #fff;
     --table-header-bg-color: #0029b1;
+    --calculate-button-bg-color: #00b17c;
+    --clear-button-bg-color: #c5c5c5;
+}
+
+.fifty-theme {
+    --body-bg-color: #333;
+    --control-panel-bg-color: #2a9da5;
+    --control-panel-font-color: #d2b48c;
+    --input-bg-color: #fff;
+    --table-header-bg-color: #009cb1;
     --calculate-button-bg-color: #00b17c;
     --clear-button-bg-color: #c5c5c5;
 }
@@ -30,6 +40,7 @@ body {
     height: auto;
     border-radius: 3%;
     border: solid black 2px;
+    margin: 16px;
     padding: 16px;
     padding-bottom: 40px;
     text-align: center;
