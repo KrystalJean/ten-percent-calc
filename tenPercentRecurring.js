@@ -1,6 +1,6 @@
 const calculateBtn = document.getElementById('calculate-btn');
 const clearBtn = document.getElementById('clear-btn');
-const multiplierAsPercent = document.getElementsByClassName('multiplier-as-multiplier');
+const multiplierAsPercent = document.getElementsByClassName('multiplier-as-percentage');
 let multiplierAsDecimal = .10;
 
 
